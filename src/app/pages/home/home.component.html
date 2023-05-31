@@ -1,0 +1,11 @@
+<!-- Header -->
+<poke-header></poke-header>
+
+<!-- Search -->
+<main class="fadeInLeft">
+    <poke-search (onSearch)="onSearch($event)"></poke-search>
+    <div class="pokemon__area">
+        <poke-card *ngFor="let pokemon of pokemons" [pokemon]="pokemon"></poke-card>
+    </div>
+</main>
+

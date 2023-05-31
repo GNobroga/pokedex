@@ -1,0 +1,100 @@
+@import "../../../config-scss/variables.scss";
+@import "../../../config-scss/rem-calc.scss";
+
+:host {
+
+    main {
+        padding: 15px;
+    }
+
+    .title {
+        margin: auto;
+
+        text-align: right;
+        margin-bottom: 10px;
+        position: relative;
+        font-size: rem-calc(30);
+        color: #ffffff7a;
+        padding-right: 20px;
+
+        h2 {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            font-size: rem-calc(16);
+            font-weight: bold;
+            font-style: italic;
+            color: var(--white);
+        }
+
+    }
+
+    .details {
+        background-color: var(--white);
+        border-radius: 20px;
+
+        position: relative;
+        padding: 60px;
+
+        img {
+            position: absolute;
+            top: -13%;
+            left: 3%;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            object-fit: contain;
+        }
+
+
+        .details__title {
+            font-size: rem-calc(25);
+            font-style: italic;
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        .details__content {
+
+            .details__atributos {
+                margin-top: 10px;
+
+                .details__atributo {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px 0px;
+
+                    span:nth-child(2) {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .details__button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 80%;
+            height: 50px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            font-size: rem-calc(18);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                transform:  scale(1.1);
+            }
+        }
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+
+}

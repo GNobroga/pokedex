@@ -1,0 +1,71 @@
+@import "../../../config-scss/rem-calc.scss";
+
+:host {
+    .pokemon {
+        $padding: 20;
+        background-color: var(--white);
+        padding: rem-calc($padding);
+        border-radius: 10px;
+        cursor: pointer;
+
+        h1 {
+            height: 20%;
+            display: flex;
+            align-items: end;
+            font-size: rem-calc(22);
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .pokemon__content {
+            height: 80%;
+            display: flex;
+
+            div {
+               flex: 1;
+            }
+
+
+        }
+
+        ul.types {
+            max-width: 60px;
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: 22px;
+            gap: 8px;
+            height: 100%;
+            font-size: rem-calc(12);
+
+
+            li {
+                background-color: #EFEFEF !important;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        .area__2 {
+            background-image: url(../../../assets/pokemon-background.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                max-width: 100px;
+                height: 100px;
+                object-fit: contain;
+
+            }
+        }
+
+
+    }
+}

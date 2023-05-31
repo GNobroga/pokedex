@@ -1,0 +1,13 @@
+<div class="search">
+    <input
+        type="text"
+        name="search"
+        [(ngModel)]="search"
+        class="search-input"
+        placeholder="Buscar Pokemon..."
+        (keydown)="onKeyDown($event)"
+    />
+    <div class="search-icon">
+        <img src="../../../assets/icons/search.svg" alt="Icone de pesquisa">
+    </div>
+</div>

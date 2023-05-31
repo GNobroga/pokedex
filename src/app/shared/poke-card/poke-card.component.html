@@ -1,0 +1,13 @@
+<div class="pokemon" *ngIf="pokemon.status" (click)="toSee(pokemon.status.id)">
+    <h1>{{ pokemon.name }}</h1>
+    <div class="pokemon__content">
+        <div class="area__1">
+            <ul class="types">
+                <li class="type" *ngFor="let value of pokemon.status.types">{{ value.type.name }}</li>
+            </ul>
+        </div>
+        <div class="area__2">
+            <img [src]="pokemon.status.sprites.other.dream_world.front_default" [alt]="'Foto de ' + pokemon.name">
+        </div>
+    </div>
+</div>

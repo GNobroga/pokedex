@@ -1,27 +1,32 @@
 # Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Página de busca e pesquisa de pokemons que permite identificar algumas características que um determinado pokemon provê. Este projeto foi planejado e desenvolvimento por **Gabriel Cardoso**.
 
-## Development server
+## Tecnologias 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Angular
+2. SASS
+3. Typescript
+4. Angular Material
 
-## Code scaffolding
+## Como executar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Siga os passos abaixo:
 
-## Build
+1. Dentro da pasta do projeto execute o comando (terminal):
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
 
-## Running unit tests
+    npm i
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+2. Logo em seguida:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
 
-## Further help
+    npm start
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+
+Pronto! Estará pronto para ser visualizado. **Contratulations!**

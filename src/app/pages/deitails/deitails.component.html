@@ -1,0 +1,32 @@
+<poke-header></poke-header>
+<main class="zoomIn">
+
+    <div class="container" *ngIf="pokemon">
+        <div class="title">
+            <h1>{{ pokemon[1].names[0].name }}</h1>
+            <h2>{{ pokemon[0].name }}</h2>
+        </div>
+        <div class="details">
+            <img
+                [src]="pokemon[0].sprites.other.dream_world.front_default"
+                [alt]="'Foto' + pokemon[0].name" class="zoomIn"
+            />
+            <div class="details__content">
+                <h1 class="details__title">Estatisticas</h1>
+                <div class="details__atributos">
+                    <div
+                        class="details__atributo"
+                        *ngFor="let value of pokemon[0].stats"
+                    >
+                        <span>{{ value.stat.name }}</span>
+                        <span>{{ value.base_stat }}</span>
+                    </div>
+                </div>
+            </div>
+            <button class="details__button" (click)="toBack()">Voltar</button>
+        </div>
+    </div>
+    <div *ngIf="!pokemon" class="center">
+        <mat-spinner ></mat-spinner>
+    </div>
+</main>
