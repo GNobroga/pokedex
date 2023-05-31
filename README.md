@@ -29,4 +29,4 @@ Siga os passos abaixo:
 
 ```
 
-Pronto! Estará pronto para ser visualizado. **Contratulations!**
+Pronto! Estará pronto para ser visualizado. **Congratulations!**
